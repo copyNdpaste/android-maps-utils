@@ -58,7 +58,7 @@ public abstract class BaseDemoActivity extends FragmentActivity implements OnMap
     /**
      * Run the demo-specific code.
      */
-    protected abstract void startDemo();
+    protected abstract void startDemo();//각 경기장을 지도 상에 찍어줌
 
     protected GoogleMap getMap() {
         return mMap;

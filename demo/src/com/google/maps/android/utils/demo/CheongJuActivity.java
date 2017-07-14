@@ -35,7 +35,7 @@ public class CheongJuActivity extends BaseDemoActivity {
     private ClusterManager<MyItem> mClusterManager;
 
     @Override
-    protected void startDemo() {
+    protected void startDemo() {//경기장 지도에 찍어줌
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(36.627711, 127.457983), 10));
 
         mClusterManager = new ClusterManager<MyItem>(this, getMap());
@@ -49,7 +49,7 @@ public class CheongJuActivity extends BaseDemoActivity {
     }
 
     private void readItems() throws JSONException {
-        InputStream inputStream = getResources().openRawResource(R.raw.radar_search);
+        InputStream inputStream = getResources().openRawResource(R.raw.radar_search);//청주시 경기장 데이터
         List<MyItem> items = new MyItemReader().read(inputStream);
         mClusterManager.addItems(items);
     }
