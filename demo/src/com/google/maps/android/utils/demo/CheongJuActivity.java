@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+
 package com.google.maps.android.utils.demo;
 
 import android.widget.Toast;
@@ -28,7 +28,10 @@ import org.json.JSONException;
 import java.io.InputStream;
 import java.util.List;
 
-public class BigClusteringDemoActivity extends BaseDemoActivity {
+/**
+ * Simple activity demonstrating ClusterManager.
+ */
+public class CheongJuActivity extends BaseDemoActivity {
     private ClusterManager<MyItem> mClusterManager;
 
     @Override
@@ -36,8 +39,8 @@ public class BigClusteringDemoActivity extends BaseDemoActivity {
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(36.627711, 127.457983), 10));
 
         mClusterManager = new ClusterManager<MyItem>(this, getMap());
-
         getMap().setOnCameraIdleListener(mClusterManager);
+
         try {
             readItems();
         } catch (JSONException e) {
@@ -48,15 +51,6 @@ public class BigClusteringDemoActivity extends BaseDemoActivity {
     private void readItems() throws JSONException {
         InputStream inputStream = getResources().openRawResource(R.raw.radar_search);
         List<MyItem> items = new MyItemReader().read(inputStream);
-        for (int i = 0; i < 10; i++) {
-            double offset = i / 60d;
-            for (MyItem item : items) {
-                LatLng position = item.getPosition();
-                double lat = position.latitude + offset;
-                double lng = position.longitude + offset;
-                MyItem offsetItem = new MyItem(lat, lng);
-                mClusterManager.addItem(offsetItem);
-            }
-        }
+        mClusterManager.addItems(items);
     }
-}*/
+}

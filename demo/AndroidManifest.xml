@@ -33,7 +33,7 @@
 
         <meta-data
                 android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyDCa5WRSMk3CrNSf3y5xbyQTvp1_zwuTtE"/>
+                android:value="AIzaSyA7wT4-b6TwCdEzo3ds1j7fmH1pN5uZibg"/>
 
         <activity
                 android:name=".MainActivity"
@@ -45,7 +45,7 @@
         </activity>
 
         <activity android:name=".ClusteringDemoActivity"/>
-        <activity android:name=".BigClusteringDemoActivity"/>
+        <activity android:name=".CheongJuActivity"/>
         <activity android:name=".CustomMarkerClusteringDemoActivity"/>
 
     </application>

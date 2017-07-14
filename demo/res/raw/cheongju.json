@@ -1,0 +1,13 @@
+
+[
+  { "lat" :36.627711, "lng" : 127.457983 },
+  { "lat" : 36.632349, "lng" : 127.458438, "title" : "중문", "snippet": "Whitehall Pl"},
+  { "lat" : 36.631906, "lng" : 127.460871,  "title" : "사창 지구대", "snippet" : "Covent Garden"},
+  { "lat" : 36.632629, "lng" : 127.460431, "title" : "롯데시네마 청주 충대점", "snippet": "Mayfair"},
+  { "lat" : 36.633955, "lng" : 127.459819, "title" : "파리바게트", "snippet": " Belgravia" },
+  { "lat" : 36.633572, "lng" : 127.458896, "title" : "사창동주민센터", "snippet": " Belgravia"},
+  { "lat" : 36.626290, "lng" : 127.456705, "title" : "S1-4", "snippet": "EMSYS" },
+  { "lat" : 36.631603, "lng" : 127.457074 , "title" : "중문 입구", "snippet": "ATM"}
+
+]
+

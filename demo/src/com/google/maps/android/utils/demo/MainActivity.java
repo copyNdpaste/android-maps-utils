@@ -33,11 +33,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        mListView = (ViewGroup) findViewById(R.id.list);
+        mListView = (ViewGroup) findViewById(R.id.list);//버튼 나오는 화면임.
 
         addDemo("Clustering", ClusteringDemoActivity.class);
         addDemo("Clustering: Custom Look", CustomMarkerClusteringDemoActivity.class);
-        addDemo("Clustering: 2K markers", BigClusteringDemoActivity.class);
+        addDemo("청주 경기장", CheongJuActivity.class);
+        //addDemo("Clustering: 2K markers", BigClusteringDemoActivity.class);
     }
 
     private void addDemo(String demoName, Class<? extends Activity> activityClass) {
