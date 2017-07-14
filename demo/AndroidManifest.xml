@@ -44,18 +44,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".PolyDecodeDemoActivity"/>
-        <activity android:name=".PolySimplifyDemoActivity"/>
-        <activity android:name=".IconGeneratorDemoActivity"/>
-        <activity android:name=".DistanceDemoActivity"/>
         <activity android:name=".ClusteringDemoActivity"/>
         <activity android:name=".BigClusteringDemoActivity"/>
         <activity android:name=".CustomMarkerClusteringDemoActivity"/>
-        <activity android:name=".TileProviderAndProjectionDemo"/>
-        <activity android:name=".HeatmapsDemoActivity"/>
-        <activity android:name=".HeatmapsPlacesDemoActivity"/>
-        <activity android:name=".GeoJsonDemoActivity"/>
-        <activity android:name=".KmlDemoActivity"/>
 
     </application>
 
