@@ -14,18 +14,19 @@
  * limitations under the License.
  */
 
+
 package com.google.maps.android.utils.demo;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import com.google.maps.android.utils.demo.model.MyItem;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.google.maps.android.utils.demo.model.MyItem;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class MyItemReader {
 
@@ -34,6 +35,7 @@ public class MyItemReader {
      * so Scanner.next returns whole InputStream as a String.
      * http://stackoverflow.com/a/5445161/2183804
      */
+
     private static final String REGEX_INPUT_BOUNDARY_BEGINNING = "\\A";
 
     public List<MyItem> read(InputStream inputStream) throws JSONException {
@@ -56,5 +58,4 @@ public class MyItemReader {
         }
         return items;
     }
-
 }

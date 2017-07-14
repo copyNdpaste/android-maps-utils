@@ -18,7 +18,6 @@ package com.google.maps.android.utils.demo;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -203,7 +202,7 @@ public class CustomMarkerClusteringDemoActivity extends BaseDemoActivity impleme
     }
 
     private LatLng position() {
-        return new LatLng(random(51.6723432, 51.38494009999999), random(0.148271, -0.3514683));
+        return new LatLng(random(36.627711, 127.457983), random(0.148271, -0.3514683));
     }
 
     private double random(double min, double max) {
